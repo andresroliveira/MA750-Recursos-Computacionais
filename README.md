@@ -19,7 +19,7 @@ TBD: Adicionar os trabalhos da disciplina que serão realizados em grupo.
 Para baixar os arquivos, basta clicar no botão verde "Clone or download" e depois em "Download ZIP". Você também pode clonar o repositório para o seu computador, caso tenha o Git instalado.
 
 ```bash
-git clone
+git clone https://github.com/andresroliveira/MA750-Recursos-Computacionais.git
 ```
 
 ## Tópicos Adicionais
