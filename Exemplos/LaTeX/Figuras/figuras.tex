@@ -1,0 +1,111 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{hyperref}
+
+\title{Figuras}
+\author{Andrês}
+\date{Para MA750 - Recursos Computacionais}
+
+\begin{document}
+
+\maketitle
+
+\section{Inserindo Figuras}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{figura}
+  \caption{Uma figura}
+  \label{fig:figura}
+\end{figure}
+
+\section{Inserindo Figuras com Subfiguras}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura}
+    \caption{Figura 1}
+    \label{fig:figura1}
+  \end{minipage}
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura}
+    \caption{Figura 2}
+    \label{fig:figura2}
+  \end{minipage}
+\end{figure}
+
+\section{Inserindo Figuras com Subfiguras e Títulos}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura}
+    \caption{Figura 1}
+    \label{fig:figura11}
+  \end{minipage}
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura}
+    \caption{Figura 2}
+    \label{fig:figura12}
+  \end{minipage}
+  \caption{Figuras 1 e 2}
+  \label{fig:figuras}
+\end{figure}
+
+\section{Subfiguras Elencadas}
+
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figura}
+        \caption{Figura 1}
+        \label{fig:figuraa1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figura}
+        \caption{Figura 2}
+        \label{fig:figuraa2}
+    \end{subfigure}
+
+    \caption{Figuras a e b}
+    \label{fig:figuraaeb}
+\end{figure}
+
+\section{Referenciando Figuras}
+
+Na Figura \ref{fig:figura} temos uma figura.
+
+Na Figura \ref{fig:figura1} temos uma figura.
+
+Na Figura \ref{fig:figura2} temos uma figura.
+
+Na Figura \ref{fig:figura11} temos uma figura.
+
+Na Figura \ref{fig:figura12} temos uma figura.
+
+Na Figura \ref{fig:figuras} temos uma figura.
+
+Na Figura \ref{fig:figuraa1} temos uma figura.
+
+Na Figura \ref{fig:figuraa2} temos uma figura.
+
+Na Figura \ref{fig:figuraaeb} temos uma figura.
+
+
+
+
+\end{document}
