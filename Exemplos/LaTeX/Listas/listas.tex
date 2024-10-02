@@ -1,0 +1,97 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{enumitem}
+
+\title{Listas}
+\author{Andrês}
+\date{Para MA750 - Recursos Computacionais}
+
+\begin{document}
+
+\maketitle
+
+\section{Lista Enumerada}
+
+\begin{enumerate}
+  \item Primeiro item
+  \item Segundo item
+  \item Terceiro item
+  \item Quarto item
+\end{enumerate}
+
+\section{Lista Não Enumerada}
+
+\begin{itemize}
+  \item Primeiro item
+  \item Segundo item
+  \item Terceiro item
+  \item Quarto item
+\end{itemize}
+
+\section{Lista Descritiva}
+
+\begin{description}
+  \item[Primeiro] Primeiro item
+  \item[Segundo] Segundo item
+  \item[Terceiro] Terceiro item
+  \item[Quarto] Quarto item
+  \item[] Item sem rótulo
+\end{description}
+
+\section{Listas Personalizadas}
+
+\subsection{Lista Com Números Romanos}
+
+\begin{enumerate}[label=\Roman*]
+  \item Primeiro item
+  \item Segundo item
+  \item Terceiro item
+  \item Quarto item
+\end{enumerate}
+
+\subsection{Lista Com Letras minúsculas}
+
+\begin{enumerate}[label=\alph*]
+  \item Primeiro item
+  \item Segundo item
+  \item Terceiro item
+  \item Quarto item
+\end{enumerate}
+
+\subsection{Lista Com Letras maiúsculas}
+
+\begin{enumerate}[label=\Alph*]
+  \item Primeiro item
+  \item Segundo item
+  \item Terceiro item
+  \item Quarto item
+\end{enumerate}
+
+\section{Lista dentro de Lista}
+
+\begin{enumerate}
+\item Essa é uma lista com listas
+\item Aqui começa a lista aninhada
+  \begin{enumerate}
+  \item Primeiro item
+  \item Segundo item
+  \item Terceiro item
+  \item Quarto item
+  \end{enumerate}
+\item Aqui termina a lista aninhada
+\item Último item
+\end{enumerate}
+
+\section{Lista com Estilo Personalizado}
+
+\begin{enumerate}[label=\textbf{Item \arabic*}]
+  \item Primeiro item
+  \item Segundo item
+  \item Terceiro item
+  \item Quarto item
+\end{enumerate}
+
+
+\end{document}
